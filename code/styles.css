@@ -1,0 +1,163 @@
+/* Reset and general styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1e1e1f;
+    color: #343a40;
+}
+
+.container {
+    max-width: 1200px;
+    display: flex;
+  
+    align-items: center;
+    margin-left: 10px;
+
+    padding: 2px;
+    height: 80px;
+}
+.conta{
+    color: #ffffff;
+    background-color: rgba(88, 136, 138, 0.74);
+   
+    border-radius: 14px;
+    margin-left: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: underline;
+   
+}
+.fa{
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+ 
+}
+
+
+header {
+    background-color: #043d2f;
+    color: #fff;
+    justify-content: flex-start;
+    display: flex;
+    border-radius: 25px;
+    margin-top: 5px;
+   
+   
+    border-bottom: 3px solid #b0f5ec;
+}
+
+header #logo {
+    width: 70px;
+    margin-right: 10px;
+    border-radius: 20px;
+
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+main {
+    display: flex;
+    margin-top: 20px;
+}
+
+aside {
+    flex: 1;
+    padding-right: 20px;
+}
+
+aside h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+#films {
+    list-style-type: none;
+    padding: 0;
+}
+
+#films li {
+    background-color: #0d020fcb;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s rgb(163, 153, 153);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#films li:hover {
+    background-color: #133b39;
+}
+
+#movie-details {
+    flex: 2;
+    background-color: #000000cc;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 20px;
+    border: 3px solid #b0f5ec;
+    margin-right: 5px;
+}
+
+#movie-details img {
+    width: 800px;
+    height: 450px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+.movie-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(170, 238, 243);
+    color: rgb(1, 24, 24);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 11px;
+    width: 650px;
+   
+
+
+}
+
+#movie-details h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+#movie-details p {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+#buy-ticket {
+    background-color: #ffc107;
+    color: #343a40;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+#buy-ticket:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#buy-ticket:hover:not(:disabled) {
+    background-color: #e0a800;
+}
